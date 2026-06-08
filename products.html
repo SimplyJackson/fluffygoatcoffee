@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Fluffy Goat Coffee</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <img src="assets/logo.png" alt="Logo" class="logo">
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+    </nav>
+</header>
+
+<section class="products">
+
+    <h1>Our Coffee Collection</h1>
+
+    <div class="product-grid">
+
+        <div class="product-card"
+            onclick="openModal(
+            'Mountain Sunrise',
+            'A smooth medium roast blend that is approachable, dependable, and built for daily ritual.'
+            )">
+
+            <img src="assets/mountainsunrise.png" alt="">
+            <h3>Mountain Sunrise</h3>
+        </div>
+
+        <div class="product-card"
+            onclick="openModal(
+            'Bayou Bold',
+            'A rich medium roast blend built for those who like their coffee strong and steady.'
+            )">
+
+            <img src="assets/bayoubold.png" alt="">
+            <h3>Bayou Bold</h3>
+        </div>
+
+        <div class="product-card"
+            onclick="openModal(
+            'High Ground',
+            'A balanced roast crafted for everyday coffee lovers seeking smooth flavor.'
+            )">
+
+            <img src="assets/highground.png" alt="">
+            <h3>High Ground</h3>
+        </div>
+
+        <div class="product-card"
+            onclick="openModal(
+            'River Breeze Decaf',
+            'A mellow medium roast built for comfort and peaceful moments.'
+            )">
+
+            <img src="assets/riverbreeze.png" alt="">
+            <h3>River Breeze Decaf</h3>
+        </div>
+    </div>
+
+</section>
+
+<div id="productModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalDescription"></p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
